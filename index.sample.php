@@ -53,7 +53,7 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below when you change environment, check if defines in database is proper.
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development_nishchal');
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'production');
 
 	date_default_timezone_set('Asia/Kathmandu');
 
@@ -72,11 +72,6 @@ switch (ENVIRONMENT)
 		ini_set('display_errors', 1);
 	break;
 	case 'development_nishchal':
-		error_reporting(-1);
-		ini_set('display_errors', 1);
-	break;
-
-	case 'development_bhargav':
 		error_reporting(-1);
 		ini_set('display_errors', 1);
 	break;
