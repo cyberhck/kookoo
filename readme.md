@@ -4,6 +4,15 @@ Passwordless login is a project which I'm doing for online kookoo api challenge.
 
 The way it works is, it calls user's number to authorize a session.
 
+## Using this application
+First setup application properly.
+
+To initialize tables structures, go to ```application_url/install``` (example: ```localhost/install```) which will execute tables in tables.sql file
+
+Then signup for a new account at ```application_url/signup``` after account is created, login to your account at ```application_url/login```. Once you enter your email and click on login, you should see a pin on your screen and should a receive a call in number you registered with, answer the call and listen to pin very carefully, to authorize, press ```1``` then press ```#``` to reject a pin, press ```0``` then press ```#```. If you weren't expecting a call, you can just ignore the call.
+
+Once you make a choice, call should automatically hangup.
+
 ## Release Information
 
 
